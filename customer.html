@@ -28,35 +28,30 @@
 <meta name="twitter:description" content="상테크 고객센터. 상품권 현금화·신용카드 현금화 자주 하는 질문과 채널톡 1:1 상담 안내. 한국상품권협회 상품권 전문 매니저가 답변드립니다.">
 <meta name="twitter:image" content="https://www.gift-tech.net/assets/images/og-image.png">
 
-<!-- 아이콘: 원본 favicon.png 는 scripts/fetch-assets 로 내려받음. 없을 때는 SVG 사용 -->
 <link rel="icon" href="/assets/images/favicon.png" type="image/png" sizes="121x120">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/favicon.png">
 <meta name="theme-color" content="#141416">
 
-<!-- 폰트: Pretendard (동적 서브셋) -->
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 
-<!-- Tailwind CSS (CDN) + 브랜드 토큰 -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
     theme: { extend: {
-      colors: { ink: '#141416', 'ink-2': '#1d1f23', sky: '#44b4ff', 'sky-deep': '#1e8fe0', 'sky-ink': '#0b6fbf', paper: '#f5f7fa' },
+      colors: { ink: '#141416', 'ink-2': '#1b1c1e', sky: '#44b4ff', 'sky-deep': '#2aa2f5', 'sky-ink': '#0b6fbf', paper: '#f5f6f8' },
       fontFamily: { sans: ['"Pretendard Variable"', 'Pretendard', 'system-ui', 'sans-serif'] }
     } }
   }
 </script>
 <link rel="stylesheet" href="/assets/css/style.css">
 
-<!-- Lucide icons -->
 <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 
 <!-- ===== Google Tag Manager =====
      GTM 컨테이너 ID 가 준비되면 아래 주석을 해제하고 GTM-XXXXXXX 를 교체하세요.
-     (기존 Wix 사이트에는 GTM/GA 코드가 확인되지 않아 플레이스홀더로 둡니다.)
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
      ===== End Google Tag Manager ===== -->
 <script type="application/ld+json">
@@ -85,7 +80,7 @@
       <a href="/상품권-할부구매">상품권 할부구매</a>
       <a href="/상품권-구입처">상품권 구입처</a>
       <a href="/customer">고객센터</a>
-      <a class="btn btn-primary btn-sm ml-2" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">상담하기</a>
+      <a class="btn btn-pill btn-sm ml-3" style="background:#2b2e33;color:#fff" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">상담하기</a>
     </nav>
     <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-mobile">
       <i data-lucide="menu" aria-hidden="true"></i>
@@ -104,51 +99,59 @@
 
 <main id="main">
 
-<section class="page-hero on-dark">
+<section class="hero hero-page">
+  <div class="hero-bg" aria-hidden="true"><img src="/assets/images/hero-home.jpg" alt="" data-parallax="14" decoding="async" fetchpriority="high"></div>
+  <div class="hero-shade center" aria-hidden="true"></div>
+  <div class="hero-watermark" aria-hidden="true">KOREA GIFT CARD ASSOCIATION</div>
   <div class="container">
-    <nav class="crumbs" aria-label="현재 위치"><a href="/">홈</a><i data-lucide="chevron-right" aria-hidden="true"></i><span aria-current="page">고객센터</span></nav>
-    <p class="kicker">고객센터</p>
-    <h1 class="h-page mt-2">고객센터</h1>
-    <p class="lead">궁금한 사항은 채널톡 상담하기로 문의해 주세요.</p>
-    <div class="band-wrap">
-<div class="consult-band">
-  <div class="flex items-center gap-4">
-    <img src="/assets/images/icon-chat-bubble.png" alt="" width="44" height="44" loading="lazy" decoding="async">
-    <div>
-      <p class="q">상품권 현금화, 신용카드 현금화 문의는?</p>
-      <p class="t">채널톡으로 바로 문의!</p>
-    </div>
-  </div>
-  <a class="btn btn-white" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기 <i data-lucide="chevron-right" aria-hidden="true"></i></a>
-</div>
-</div>
+      <nav class="crumbs" aria-label="현재 위치"><a href="/">홈</a><i data-lucide="chevron-right" aria-hidden="true"></i><span aria-current="page">고객센터</span></nav>
+      <h1 class="h-page" data-reveal="up">고객센터</h1>
+      <p class="lead" data-reveal="up" data-delay="100">궁금한 사항은 채널톡 상담하기로 문의해 주세요.</p>
+      <div class="actions" data-reveal="up" data-delay="200"><a class="btn btn-white btn-pill" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기</a><a class="btn btn-outline-light btn-pill" href="https://koreagiftcard.co.kr/" target="_blank" rel="noopener">한국상품권협회 바로가기</a></div>
   </div>
 </section>
 
 
-<section class="section section-paper" aria-labelledby="faq-title">
+<div class="band-wrap">
+  <div class="container">
+    <div class="consult-band" data-reveal="up">
+      <div class="flex items-center gap-4">
+        <img src="/assets/images/icon-chat-bubble.png" alt="" width="52" height="52" decoding="async">
+        <div>
+          <p class="q">상품권 현금화, 신용카드 현금화 문의는?</p>
+          <p class="t">채널톡으로 바로 문의!</p>
+        </div>
+      </div>
+      <a class="btn btn-pill" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기 <i data-lucide="chevron-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</div>
+
+
+<section class="section" aria-labelledby="faq-title">
   <div class="container">
     <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] items-start">
-      <div>
+      <div data-reveal="up">
         <h2 class="h-section" id="faq-title">자주 하는 질문</h2>
-        <p class="lead mt-3">상품권 현금화·신용카드 현금화와 관련해 가장 많이 받는 질문입니다. 여기에 없는 내용은 채널톡으로 바로 문의하세요.</p>
-        <a class="btn btn-dark mt-6" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener"><i data-lucide="message-circle" aria-hidden="true"></i>채널톡 상담하기</a>
+        <div class="rule mt-4" aria-hidden="true"></div>
+        <p class="lead mt-4">상품권 현금화·신용카드 현금화와 관련해 가장 많이 받는 질문입니다. 여기에 없는 내용은 채널톡으로 바로 문의하세요.</p>
+        <a class="btn btn-dark btn-pill mt-6" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기</a>
       </div>
       <div class="faq">
         
-      <details open>
+      <details open data-reveal="up" data-delay="0">
         <summary>누구나 현금화를 이용 할 수 있나요?<i data-lucide="chevron-down" aria-hidden="true"></i></summary>
         <div class="a">본인 명의의 신용카드가 있으시다면 누구든지 이용하실 수 있는 안전한 서비스입니다. 궁금한 부분이 있으시면 채널톡으로 편하게 문의해 주세요!</div>
       </details>
-      <details>
+      <details data-reveal="up" data-delay="70">
         <summary>카드 현금화는 처음인데 믿을 수 있는 업체인가요?<i data-lucide="chevron-down" aria-hidden="true"></i></summary>
         <div class="a">한국상품권협회에 등록된 안전한 사이트만 안내 드리기에 사고가 없으며, 안전한 서비스를 제공해 드립니다.</div>
       </details>
-      <details>
+      <details data-reveal="up" data-delay="140">
         <summary>다른 사람의 계좌로 받을 수 있나요?<i data-lucide="chevron-down" aria-hidden="true"></i></summary>
         <div class="a">신용카드 현금화는 반드시 본인 명의로만 가능합니다. 휴대폰, 신용카드, 입금계좌 모두 본인의 명의여야 합니다.</div>
       </details>
-      <details>
+      <details data-reveal="up" data-delay="210">
         <summary>현금화 상담을 받고 싶어요!<i data-lucide="chevron-down" aria-hidden="true"></i></summary>
         <div class="a">채널톡 1:1 채팅을 통해 자세한 상담이 가능합니다. 궁금하신 사항이 있으시면 언제든 부담없이 문의해주세요.</div>
       </details>
@@ -157,23 +160,23 @@
   </div>
 </section>
 
-<section class="section" aria-labelledby="contact-title">
+<section class="section section-paper" aria-labelledby="contact-title">
   <div class="container">
     <div class="section-head">
-      <h2 class="h-section" id="contact-title">연락처</h2>
+      <h2 class="h-section" id="contact-title" data-reveal="up">연락처</h2>
     </div>
-    <div class="grid gap-4 md:grid-cols-3">
-      <a class="step" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">
+    <div class="contact-grid">
+      <a class="step" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener" data-reveal="up">
         <span class="num"><b><i data-lucide="message-circle" aria-hidden="true" style="width:16px;height:16px"></i></b>채널톡</span>
         <h3>1:1 채팅 상담</h3>
         <p>상품권 전문 매니저가 실시간으로 답변드립니다. 365일 문의 가능합니다.</p>
       </a>
-      <a class="step" href="tel:1800-2434">
+      <a class="step" href="tel:1800-2434" data-reveal="up" data-delay="80">
         <span class="num"><b><i data-lucide="phone" aria-hidden="true" style="width:16px;height:16px"></i></b>전화</span>
         <h3>1800-2434</h3>
         <p>한국상품권협회 대표번호</p>
       </a>
-      <a class="step" href="mailto:www@koreagiftcard.co.kr">
+      <a class="step" href="mailto:www@koreagiftcard.co.kr" data-reveal="up" data-delay="160">
         <span class="num"><b><i data-lucide="mail" aria-hidden="true" style="width:16px;height:16px"></i></b>이메일</span>
         <h3>www@koreagiftcard.co.kr</h3>
         <p>광명 GIDC — 경기 광명시 일직로 43, B동 2708호</p>
@@ -183,19 +186,18 @@
 </section>
 
 
-<section class="cta" aria-labelledby="cta-title">
+<section class="section" aria-labelledby="cta-title" style="background:#fff">
   <div class="container">
-    <div>
-      <p class="small">궁금한 것이 있다면,</p>
-      <h2 id="cta-title">지금 바로 상담 받기!</h2>
-      <p>상품권 전문 매니저와 1:1 상담이 가능합니다. 간편한 채팅 상담으로 궁금증을 해결해보세요!</p>
-      <div class="flex flex-wrap gap-3 mt-7">
-        <a class="btn btn-primary" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener"><i data-lucide="message-circle" aria-hidden="true"></i>채널톡 상담하기</a>
-        <a class="btn btn-ghost-light" href="https://koreagiftcard.co.kr/" target="_blank" rel="noopener">한국상품권협회 바로가기</a>
+    <div class="cta-wrap">
+      <div class="cta-blue" data-scrollfade>
+        <p class="small">궁금한 것이 있다면,</p>
+        <h2 id="cta-title">지금 바로 상담 받기!</h2>
+        <p>상품권 전문 매니저와 1:1 상담이 가능합니다.<br>간편한 채팅 상담으로 궁금증을 해결해보세요!</p>
+        <a class="btn btn-dark btn-pill" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기</a>
       </div>
-    </div>
-    <div class="cta-visual">
-      <img src="/assets/images/channeltalk-consult.png" alt="채널톡 상담 화면 예시" width="387" height="425" loading="lazy" decoding="async">
+      <div class="cta-phone" data-scrollfade>
+        <img src="/assets/images/channeltalk-consult.png" alt="한국상품권협회 채널톡 상담 화면" width="387" height="425" loading="lazy" decoding="async">
+      </div>
     </div>
   </div>
 </section>
@@ -205,37 +207,30 @@
 <footer class="site-footer">
   <div class="container">
     <div class="top">
-      <div>
-        <a class="logo footer-logo" href="https://koreagiftcard.co.kr/" target="_blank" rel="noopener" aria-label="한국상품권협회 홈페이지">
-          <img src="/assets/images/logo.png" alt="한국상품권협회 로고" width="151" height="100" decoding="async">
-          <span class="logo-text"><span class="logo-mark" aria-hidden="true"></span>한국상품권협회</span>
-        </a>
-        <p class="mt-4 max-w-sm">한국상품권협회에서 운영하는 상품권 재테크·상품권 현금화·상품권 할부구매 안내 사이트입니다. 모든 문의는 채널톡 1:1 상담으로 진행됩니다.</p>
+      <a class="logo footer-logo" href="https://koreagiftcard.co.kr/" target="_blank" rel="noopener" aria-label="한국상품권협회 홈페이지">
+        <img src="/assets/images/logo.png" alt="한국상품권협회 로고" width="151" height="100" decoding="async">
+        <span class="logo-text"><span class="logo-mark" aria-hidden="true"></span>한국상품권협회</span>
+      </a>
+      <div class="addr">
+        <p><strong>광명 GIDC</strong><br>경기 광명시 일직로 43, B동 2708호</p>
       </div>
-      <div>
-        <h4>안내</h4>
-        <ul>
-          <li><a href="/상품권-재테크">상품권 재테크</a></li>
-          <li><a href="/상품권-현금화">상품권 현금화</a></li>
-          <li><a href="/상품권-할부구매">상품권 할부구매</a></li>
-          <li><a href="/상품권-구입처">상품권 구입처</a></li>
-          <li><a href="/customer">고객센터</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>문의</h4>
-        <ul>
-          <li><a href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기</a></li>
-          <li><a href="tel:1800-2434">1800-2434</a></li>
-          <li><a href="mailto:www@koreagiftcard.co.kr">www@koreagiftcard.co.kr</a></li>
-          <li><a href="https://koreagiftcard.co.kr/" target="_blank" rel="noopener">한국상품권협회 바로가기</a></li>
-        </ul>
+      <div class="contact">
+        <a href="tel:1800-2434">1800-2434</a>
+        <a href="mailto:www@koreagiftcard.co.kr">www@koreagiftcard.co.kr</a>
       </div>
     </div>
+    <nav class="links" aria-label="푸터 메뉴">
+      <a href="/상품권-재테크">상품권 재테크</a>
+      <a href="/상품권-현금화">상품권 현금화</a>
+      <a href="/상품권-할부구매">상품권 할부구매</a>
+      <a href="/상품권-구입처">상품권 구입처</a>
+      <a href="/customer">고객센터</a>
+      <a href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기</a>
+      <a href="https://koreagiftcard.co.kr/" target="_blank" rel="noopener">한국상품권협회 바로가기</a>
+    </nav>
     <div class="biz">
-      <!-- TODO: 사업자 정보 — 대괄호 항목을 실제 값으로 교체하세요. (기존 Wix 사이트에는 상호/주소/전화/이메일만 표기되어 있었습니다.) -->
+      <!-- TODO: 사업자 정보 — 대괄호 항목을 실제 값으로 교체하세요. -->
       <p><span>상호 (주)한국상품권협회</span><span>대표자 [대표자명]</span><span>사업자등록번호 [000-00-00000]</span><span>통신판매업신고 [제0000-경기광명-0000호]</span></p>
-      <p><span>광명 GIDC — 경기 광명시 일직로 43, B동 2708호</span><span>대표번호 1800-2434</span><span>이메일 www@koreagiftcard.co.kr</span></p>
       <p class="copy">© <span data-year>2026</span> 한국상품권협회. All rights reserved.</p>
     </div>
   </div>

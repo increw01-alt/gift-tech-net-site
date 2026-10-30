@@ -18,3 +18,18 @@ step-05.png	https://static.wixstatic.com/media/c48507_77d3464a2d424c7b8a8af3f1f4
 step-06.png	https://static.wixstatic.com/media/c48507_8891f8f31d7340e4965a1bd11816638e~mv2.png
 step-07.png	https://static.wixstatic.com/media/c48507_a652b211e7f6489684fc9941e5cfbc0d~mv2.png
 step-chat.png	https://static.wixstatic.com/media/c48507_96020674e363440fa393f39cdae86377~mv2.png
+# ---- v2: 원본 레이아웃 재현용 배경·일러스트 (Wix 변환 URL로 용량 축소) ----
+hero-home.jpg	https://static.wixstatic.com/media/c837a6_2119733e838e4a2f8813ebde736f99d5~mv2.jpg/v1/fill/w_1654,h_717,al_c,q_80/hero-home.jpg
+bg-wave.jpg	https://static.wixstatic.com/media/c837a6_eb322a4179e54d788eef6896e67f05d0~mv2.jpg/v1/fit/w_1400,h_1400,q_75/bg-wave.jpg
+kga-frame.png	https://static.wixstatic.com/media/c48507_9c855f0801ce44dfbbb1a3e45f5970f8~mv2.png
+hero-cashout.jpg	https://static.wixstatic.com/media/c48507_b3616f88147345fa8f3081608500dd17~mv2.jpg/v1/fit/w_1920,h_1920,q_78/hero-cashout.jpg
+hero-installment.jpg	https://static.wixstatic.com/media/c48507_1517366ae23247ddaa4f4c739e760f75~mv2.jpg/v1/fit/w_1920,h_1920,q_78/hero-installment.jpg
+bg-benefits.jpg	https://static.wixstatic.com/media/c48507_b0b15dfb91ad4406b84bbd55777eb91b~mv2.jpg/v1/fit/w_1920,h_1920,q_70/bg-benefits.jpg
+illus-shopping.png	https://static.wixstatic.com/media/c48507_e46238047d1e40f69c463d8188d7ae13~mv2.png/v1/fit/w_900,h_900,q_90/illus-shopping.png
+banner-cultureland.png	https://static.wixstatic.com/media/c48507_bae63d5e80f341bf815639dfa941602d~mv2.png
+card-channeltalk.png	https://static.wixstatic.com/media/c48507_fcd8ac36897149a9b25a1f12204af702~mv2.png
+gift-cert-stack.png	https://static.wixstatic.com/media/c48507_c2a46deab373493bb0dc78e7dda42505~mv2.png
+photo-plusu.jpg	https://static.wixstatic.com/media/c48507_c9ca4143fa6946b895c9b8a3f8694663~mv2.jpg
+photo-moapin.jpg	https://static.wixstatic.com/media/c48507_9f625898620c4408a44208110e6d60d4~mv2.jpg
+photo-plusmoon.jpg	https://static.wixstatic.com/media/c48507_370ff75d35404f6f83c2b535136065e4~mv2.jpg
+photo-pinq.jpg	https://static.wixstatic.com/media/c48507_b9cd850ef1fc4053b34f28b7a53a06da~mv2.jpg

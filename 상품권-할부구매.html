@@ -28,35 +28,30 @@
 <meta name="twitter:description" content="안전한 상품권 할부 구매, 상품권 추가/대량 구입 안내. 삼성카드 제외 전 카드사 6~12개월 할부, 4단계 구매 절차와 장점을 안내합니다. 할부 구매는 채널톡 상담 후 진행됩니다.">
 <meta name="twitter:image" content="https://www.gift-tech.net/assets/images/og-image.png">
 
-<!-- 아이콘: 원본 favicon.png 는 scripts/fetch-assets 로 내려받음. 없을 때는 SVG 사용 -->
 <link rel="icon" href="/assets/images/favicon.png" type="image/png" sizes="121x120">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/favicon.png">
 <meta name="theme-color" content="#141416">
 
-<!-- 폰트: Pretendard (동적 서브셋) -->
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 
-<!-- Tailwind CSS (CDN) + 브랜드 토큰 -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
     theme: { extend: {
-      colors: { ink: '#141416', 'ink-2': '#1d1f23', sky: '#44b4ff', 'sky-deep': '#1e8fe0', 'sky-ink': '#0b6fbf', paper: '#f5f7fa' },
+      colors: { ink: '#141416', 'ink-2': '#1b1c1e', sky: '#44b4ff', 'sky-deep': '#2aa2f5', 'sky-ink': '#0b6fbf', paper: '#f5f6f8' },
       fontFamily: { sans: ['"Pretendard Variable"', 'Pretendard', 'system-ui', 'sans-serif'] }
     } }
   }
 </script>
 <link rel="stylesheet" href="/assets/css/style.css">
 
-<!-- Lucide icons -->
 <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 
 <!-- ===== Google Tag Manager =====
      GTM 컨테이너 ID 가 준비되면 아래 주석을 해제하고 GTM-XXXXXXX 를 교체하세요.
-     (기존 Wix 사이트에는 GTM/GA 코드가 확인되지 않아 플레이스홀더로 둡니다.)
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
      ===== End Google Tag Manager ===== -->
 <script type="application/ld+json">
@@ -78,7 +73,7 @@
       <a href="/상품권-할부구매">상품권 할부구매</a>
       <a href="/상품권-구입처">상품권 구입처</a>
       <a href="/customer">고객센터</a>
-      <a class="btn btn-primary btn-sm ml-2" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">상담하기</a>
+      <a class="btn btn-pill btn-sm ml-3" style="background:#2b2e33;color:#fff" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">상담하기</a>
     </nav>
     <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-mobile">
       <i data-lucide="menu" aria-hidden="true"></i>
@@ -97,122 +92,151 @@
 
 <main id="main">
 
-<section class="page-hero on-dark">
+<section class="hero hero-page">
+  <div class="hero-bg" aria-hidden="true"><img src="/assets/images/hero-installment.jpg" alt="" data-parallax="14" decoding="async" fetchpriority="high"></div>
+  <div class="hero-shade center" aria-hidden="true"></div>
+  <div class="hero-watermark" aria-hidden="true">ASSOCIATION</div>
   <div class="container">
-    <nav class="crumbs" aria-label="현재 위치"><a href="/">홈</a><i data-lucide="chevron-right" aria-hidden="true"></i><span aria-current="page">상품권 할부구매</span></nav>
-    <p class="kicker">상품권 할부구매</p>
-    <h1 class="h-page mt-2">상품권 할부구매</h1>
-    <p class="lead">신용카드를 이용해 상품권을 할부로 구매! 상품권 할부구매는 구매 금액을 월 단위로 나누어 결제하는 방식으로, 일시불 부담 없이 필요한 상품권을 합리적으로 이용하실 수 있습니다.</p>
-    <div class="band-wrap">
-<div class="consult-band">
-  <div class="flex items-center gap-4">
-    <img src="/assets/images/icon-chat-bubble.png" alt="" width="44" height="44" loading="lazy" decoding="async">
-    <div>
-      <p class="q">상품권 현금화, 신용카드 현금화 문의는?</p>
-      <p class="t">채널톡으로 바로 문의!</p>
-    </div>
-  </div>
-  <a class="btn btn-white" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기 <i data-lucide="chevron-right" aria-hidden="true"></i></a>
-</div>
-</div>
+      <nav class="crumbs" aria-label="현재 위치"><a href="/">홈</a><i data-lucide="chevron-right" aria-hidden="true"></i><span aria-current="page">상품권 할부구매</span></nav>
+      <h1 class="h-page" data-reveal="up">상품권 할부구매</h1>
+      <p class="lead" data-reveal="up" data-delay="100">상품권 할부구매는 구매 금액을 월 단위로 나누어 결제하는 방식으로,<br>일시불 부담 없이 필요한 상품권을 합리적으로 이용하실 수 있습니다.<br><br>본 서비스는 한국상품권협회 기준에 맞춰 운영되는 상품권 전문 플랫폼을 통해 제공됩니다.<br>협회 운영 기준과 관리 절차를 준수하여, 안전하고 신뢰할 수 있는 거래 환경을 제공합니다.</p>
+      <div class="actions" data-reveal="up" data-delay="200"><a class="btn btn-white btn-pill" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기</a></div>
   </div>
 </section>
 
 
-<section class="section" aria-labelledby="in-card">
+<section class="section section-dark on-dark" aria-labelledby="in-card">
   <div class="container">
-    <div class="grid gap-10 lg:grid-cols-[1fr_1fr] items-start">
+    <div class="cardinfo">
       <div>
-        <p class="kicker">대상 카드·개월 수 안내</p>
-        <h2 class="h-section mt-2" id="in-card">삼성카드 제외 전 카드사 가능<br>6~12개월 할부 가능</h2>
-      </div>
-      <div>
-        <h3 class="h-sub">폭넓은 카드사와 할부 기간</h3>
-        <p class="lead mt-3">삼성카드를 제외한 전 카드사에서 6~12개월 할부가 가능해, 일시불 부담 없이 보다 편리하게 상품권을 구매하실 수 있습니다.</p>
-        <div class="notice mt-6">
-          <h3><i data-lucide="info" aria-hidden="true"></i>할부 구매는 채널톡 상담 후 진행됩니다</h3>
-          <p>본 서비스는 한국상품권협회 기준에 맞춰 운영되는 상품권 전문 플랫폼을 통해 제공됩니다. 협회 운영 기준과 관리 절차를 준수하여, 안전하고 신뢰할 수 있는 거래 환경을 제공합니다.</p>
+        <p class="kicker" data-reveal="left">대상 카드·개월 수 안내</p>
+        <h2 class="h-section mt-2" id="in-card" data-reveal="left" data-delay="80">삼성카드 제외 전 카드사 가능<br>6~12개월 할부 가능</h2>
+        <!-- 카드사 표시: 로고 대신 텍스트 칩 (각 사 로고는 상표 자산이라 사용하지 않음) -->
+        <div class="chips" data-reveal="left" data-delay="160" aria-label="이용 가능 카드사 예시">
+          <span class="chip" style="--r:-3deg"><i data-lucide="credit-card" aria-hidden="true"></i>롯데카드</span>
+          <span class="chip" style="--r:2deg"><i data-lucide="credit-card" aria-hidden="true"></i>KB국민카드</span>
+          <span class="chip" style="--r:-2deg"><i data-lucide="credit-card" aria-hidden="true"></i>신한카드</span>
+          <span class="chip" style="--r:3deg"><i data-lucide="credit-card" aria-hidden="true"></i>현대카드</span>
+          <span class="chip" style="--r:-1deg"><i data-lucide="credit-card" aria-hidden="true"></i>하나카드</span>
+          <span class="chip" style="--r:2deg"><i data-lucide="credit-card" aria-hidden="true"></i>우리카드</span>
+          <span class="chip" style="--r:-2deg"><i data-lucide="credit-card" aria-hidden="true"></i>NH농협카드</span>
+          <span class="chip" style="--r:1deg"><i data-lucide="credit-card" aria-hidden="true"></i>BC카드</span>
+          <span class="chip" style="--r:-3deg"><i data-lucide="credit-card" aria-hidden="true"></i>토스뱅크</span>
+          <span class="chip" style="--r:2deg"><i data-lucide="credit-card" aria-hidden="true"></i>카카오뱅크</span>
+          <span class="chip muted" style="--r:-1deg"><i data-lucide="x" aria-hidden="true"></i>삼성카드 제외</span>
         </div>
       </div>
+      <div data-reveal="right" data-delay="120">
+        <h3 class="h-sub">폭넓은 카드사와 할부 기간</h3>
+        <p class="lead mt-3">삼성카드를 제외한 전 카드사에서 6~12개월 할부가 가능해, 일시불 부담 없이 보다 편리하게 상품권을 구매하실 수 있습니다.</p>
+        <p class="mt-4" style="color:#44b4ff;font-weight:600">* 할부 구매는 채널톡 상담 후 진행됩니다.</p>
+        <a class="btn btn-white mt-6" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section section-paper" aria-labelledby="in-process">
+
+<div class="band-wrap">
   <div class="container">
-    <div class="section-head">
-      <p class="kicker">구매 절차</p>
-      <h2 class="h-section" id="in-process">상품권 할부 구매 절차</h2>
-      <p class="lead">할부구매는 고객의 상황에 맞춰 진행되므로 구매 진행 전 상담이 필수입니다.</p>
+    <div class="consult-band" data-reveal="up">
+      <div class="flex items-center gap-4">
+        <img src="/assets/images/icon-chat-bubble.png" alt="" width="52" height="52" decoding="async">
+        <div>
+          <p class="q">상품권 현금화, 신용카드 현금화 문의는?</p>
+          <p class="t">채널톡으로 바로 문의!</p>
+        </div>
+      </div>
+      <a class="btn btn-pill" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기 <i data-lucide="chevron-right" aria-hidden="true"></i></a>
     </div>
-    <ol class="timeline" aria-label="상품권 할부 구매 절차">
-      <li class="tl-item">
-        <span class="dot" aria-hidden="true">1</span>
-        <h3>채널톡 상담 연결</h3>
-        <p>페이지 내 상담 버튼을 눌러 문의하면 전담 매니저가 카드 이용 현황, 필요 금액, 목적(소비/현금 활용)을 먼저 확인합니다.</p>
-      </li>
-      <li class="tl-item">
-        <span class="dot" aria-hidden="true">2</span>
-        <h3>상품권 종류·구매방법 안내</h3>
-        <p>컬쳐랜드, 신세계백화점상품권 등 어떤 상품권을 어떤 방식(일시불, 할부 구매, 소액결제)으로 준비할지 고객 상황에 맞게 구조를 함께 안내합니다.</p>
-      </li>
-      <li class="tl-item">
-        <span class="dot" aria-hidden="true">3</span>
-        <h3>결제 및 상품권 발송</h3>
-        <p>상담을 통해 정리된 구조에 따라 신용카드로 상품권 구매 / 소액결제로 상품권 구매 / 상품권 할부구매 중 선택한 방식으로 결제 후 상품권이 발송됩니다.</p>
-      </li>
-      <li class="tl-item">
-        <span class="dot" aria-hidden="true">4</span>
-        <h3>구매 후 처리·현금 활용 안내</h3>
-        <p>구매 후 처리 방식, 사용처, 유효기간 등을 안내해 드리며, 필요 시 컬쳐랜드 현금화, 신세계백화점상품권 현금화 등 구매 후 현금화 가능성에 대해서도 설명해 드립니다.</p>
-      </li>
-    </ol>
-    <div class="mt-10">
-      <a class="btn btn-dark" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener"><i data-lucide="message-circle" aria-hidden="true"></i>할부 구매 상담하기</a>
+  </div>
+</div>
+
+
+<section class="section" aria-labelledby="in-process">
+  <div class="container">
+    <div class="grid gap-8 lg:grid-cols-[1fr_1fr] items-center" style="margin-bottom:56px">
+      <div>
+        <p class="kicker" data-reveal="up">구매 절차</p>
+        <h2 class="h-section mt-2" id="in-process" data-reveal="up" data-delay="80">상품권 할부 구매 절차</h2>
+        <p class="lead mt-3" data-reveal="up" data-delay="160">할부구매는 고객의 상황에 맞춰 진행되므로 구매 진행 전 상담이 필수입니다.</p>
+        <a class="btn btn-dark btn-pill mt-6" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener" data-reveal="up" data-delay="220">채널톡 상담받기</a>
+      </div>
+      <div class="promo-card" data-reveal="right" data-delay="120">
+        <h3>채널톡으로 간편하게</h3>
+        <p>신용카드 · 상품권 할부 구매 · 매입 상담</p>
+        <a class="btn btn-dark btn-sm btn-pill" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담받기</a>
+        <img src="/assets/images/card-channeltalk.png" alt="" loading="lazy" decoding="async">
+      </div>
+    </div>
+
+    <div class="process">
+      <div class="media" data-reveal="left">
+        <img src="/assets/images/banner-cultureland.png" alt="상품권 구매부터 매입까지, 채널톡 상담으로 간편하게" loading="lazy" decoding="async">
+      </div>
+      <ol class="tl" aria-label="상품권 할부 구매 절차">
+        <li class="tl-item" data-reveal="up">
+          <div><span class="lab">STEP 1</span><h3>채널톡 상담 연결</h3></div>
+          <p>페이지 내 상담 버튼을 눌러 문의하면 전담 매니저가 카드 이용 현황, 필요 금액, 목적(소비/현금 활용)을 먼저 확인합니다.</p>
+        </li>
+        <li class="tl-item" data-reveal="up" data-delay="80">
+          <div><span class="lab">STEP 2</span><h3>상품권 종류·구매방법 안내</h3></div>
+          <p>컬쳐랜드, 신세계백화점상품권 등 어떤 상품권을 어떤 방식(일시불, 할부 구매, 소액결제)으로 준비할지 고객 상황에 맞게 구조를 함께 안내합니다.</p>
+        </li>
+        <li class="tl-item" data-reveal="up" data-delay="160">
+          <div><span class="lab">STEP 3</span><h3>결제 및 상품권 발송</h3></div>
+          <p>상담을 통해 정리된 구조에 따라 신용카드로 상품권 구매 / 소액결제로 상품권 구매 / 상품권 할부구매 중 선택한 방식으로 결제 후 상품권이 발송됩니다.</p>
+        </li>
+        <li class="tl-item" data-reveal="up" data-delay="240">
+          <div><span class="lab">STEP 4</span><h3>구매 후 처리·현금 활용 안내</h3></div>
+          <p>구매 후 처리 방식, 사용처, 유효기간 등을 안내해 드리며, 필요 시 컬쳐랜드 현금화, 신세계백화점상품권 현금화 등 구매 후 현금화 가능성에 대해서도 설명해 드립니다.</p>
+        </li>
+      </ol>
     </div>
   </div>
 </section>
 
-<section class="section section-dark on-dark" aria-labelledby="in-benefit">
+<section class="section benefits-bg" aria-labelledby="in-benefit">
+  <div class="bgimg" aria-hidden="true"><img src="/assets/images/bg-benefits.jpg" alt="" data-parallax="10" loading="lazy" decoding="async"></div>
   <div class="container">
-    <div class="section-head">
-      <p class="kicker">상품권 할부구매</p>
-      <h2 class="h-section" id="in-benefit">상품권 할부구매 장점</h2>
+    <div class="section-head center">
+      <p class="kicker" data-reveal="up">INSTALLMENT PAYMENT</p>
+      <h2 class="h-section" id="in-benefit" data-reveal="up" data-delay="80">상품권 할부구매 장점</h2>
     </div>
     <div class="benefits">
-      <article class="benefit">
-        <span class="ic"><i data-lucide="zap" aria-hidden="true"></i></span>
+      <article class="benefit" data-reveal="up">
+        <div class="n">1</div>
         <h3>상품권 즉시 수령</h3>
         <p>할부 구매가 완료되면 즉시 상품권을 받을 수 있어, 긴급하게 상품권이 필요한 경우에도 빠르게 이용할 수 있습니다.</p>
       </article>
-      <article class="benefit">
-        <span class="ic"><i data-lucide="calendar-days" aria-hidden="true"></i></span>
+      <article class="benefit" data-reveal="up" data-delay="100">
+        <div class="n">2</div>
         <h3>부담 없는 결제</h3>
         <p>대량의 상품권을 구매할 때 결제하는 부담을 덜어줍니다. 개월별로 나누어 결제해 더 편리하게 이용 가능합니다.</p>
       </article>
-      <article class="benefit">
-        <span class="ic"><i data-lucide="scale" aria-hidden="true"></i></span>
+      <article class="benefit" data-reveal="up" data-delay="200">
+        <div class="n">3</div>
         <h3>유연한 재정 관리</h3>
         <p>한 번에 큰 금액을 결제하지 않고 나누어 결제해, 사용자의 재정 상황에 맞춰 상품권을 구매할 수 있습니다.</p>
       </article>
     </div>
+    <a class="btn btn-dark btn-block" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener" data-reveal="up" data-delay="260">채널톡 상담받기</a>
   </div>
 </section>
 
 
-<section class="cta" aria-labelledby="cta-title">
+<section class="section" aria-labelledby="cta-title" style="background:#fff">
   <div class="container">
-    <div>
-      <p class="small">궁금한 것이 있다면,</p>
-      <h2 id="cta-title">지금 바로 상담 받기!</h2>
-      <p>상품권 전문 매니저와 1:1 상담이 가능합니다. 간편한 채팅 상담으로 궁금증을 해결해보세요!</p>
-      <div class="flex flex-wrap gap-3 mt-7">
-        <a class="btn btn-primary" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener"><i data-lucide="message-circle" aria-hidden="true"></i>채널톡 상담하기</a>
-        <a class="btn btn-ghost-light" href="https://koreagiftcard.co.kr/" target="_blank" rel="noopener">한국상품권협회 바로가기</a>
+    <div class="cta-wrap">
+      <div class="cta-blue" data-scrollfade>
+        <p class="small">궁금한 것이 있다면,</p>
+        <h2 id="cta-title">지금 바로 상담 받기!</h2>
+        <p>상품권 전문 매니저와 1:1 상담이 가능합니다.<br>간편한 채팅 상담으로 궁금증을 해결해보세요!</p>
+        <a class="btn btn-dark btn-pill" href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기</a>
       </div>
-    </div>
-    <div class="cta-visual">
-      <img src="/assets/images/channeltalk-consult.png" alt="채널톡 상담 화면 예시" width="387" height="425" loading="lazy" decoding="async">
+      <div class="cta-phone" data-scrollfade>
+        <img src="/assets/images/channeltalk-consult.png" alt="한국상품권협회 채널톡 상담 화면" width="387" height="425" loading="lazy" decoding="async">
+      </div>
     </div>
   </div>
 </section>
@@ -222,37 +246,30 @@
 <footer class="site-footer">
   <div class="container">
     <div class="top">
-      <div>
-        <a class="logo footer-logo" href="https://koreagiftcard.co.kr/" target="_blank" rel="noopener" aria-label="한국상품권협회 홈페이지">
-          <img src="/assets/images/logo.png" alt="한국상품권협회 로고" width="151" height="100" decoding="async">
-          <span class="logo-text"><span class="logo-mark" aria-hidden="true"></span>한국상품권협회</span>
-        </a>
-        <p class="mt-4 max-w-sm">한국상품권협회에서 운영하는 상품권 재테크·상품권 현금화·상품권 할부구매 안내 사이트입니다. 모든 문의는 채널톡 1:1 상담으로 진행됩니다.</p>
+      <a class="logo footer-logo" href="https://koreagiftcard.co.kr/" target="_blank" rel="noopener" aria-label="한국상품권협회 홈페이지">
+        <img src="/assets/images/logo.png" alt="한국상품권협회 로고" width="151" height="100" decoding="async">
+        <span class="logo-text"><span class="logo-mark" aria-hidden="true"></span>한국상품권협회</span>
+      </a>
+      <div class="addr">
+        <p><strong>광명 GIDC</strong><br>경기 광명시 일직로 43, B동 2708호</p>
       </div>
-      <div>
-        <h4>안내</h4>
-        <ul>
-          <li><a href="/상품권-재테크">상품권 재테크</a></li>
-          <li><a href="/상품권-현금화">상품권 현금화</a></li>
-          <li><a href="/상품권-할부구매">상품권 할부구매</a></li>
-          <li><a href="/상품권-구입처">상품권 구입처</a></li>
-          <li><a href="/customer">고객센터</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>문의</h4>
-        <ul>
-          <li><a href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기</a></li>
-          <li><a href="tel:1800-2434">1800-2434</a></li>
-          <li><a href="mailto:www@koreagiftcard.co.kr">www@koreagiftcard.co.kr</a></li>
-          <li><a href="https://koreagiftcard.co.kr/" target="_blank" rel="noopener">한국상품권협회 바로가기</a></li>
-        </ul>
+      <div class="contact">
+        <a href="tel:1800-2434">1800-2434</a>
+        <a href="mailto:www@koreagiftcard.co.kr">www@koreagiftcard.co.kr</a>
       </div>
     </div>
+    <nav class="links" aria-label="푸터 메뉴">
+      <a href="/상품권-재테크">상품권 재테크</a>
+      <a href="/상품권-현금화">상품권 현금화</a>
+      <a href="/상품권-할부구매">상품권 할부구매</a>
+      <a href="/상품권-구입처">상품권 구입처</a>
+      <a href="/customer">고객센터</a>
+      <a href="https://koreagiftcard.channel.io/home" target="_blank" rel="noopener">채널톡 상담하기</a>
+      <a href="https://koreagiftcard.co.kr/" target="_blank" rel="noopener">한국상품권협회 바로가기</a>
+    </nav>
     <div class="biz">
-      <!-- TODO: 사업자 정보 — 대괄호 항목을 실제 값으로 교체하세요. (기존 Wix 사이트에는 상호/주소/전화/이메일만 표기되어 있었습니다.) -->
+      <!-- TODO: 사업자 정보 — 대괄호 항목을 실제 값으로 교체하세요. -->
       <p><span>상호 (주)한국상품권협회</span><span>대표자 [대표자명]</span><span>사업자등록번호 [000-00-00000]</span><span>통신판매업신고 [제0000-경기광명-0000호]</span></p>
-      <p><span>광명 GIDC — 경기 광명시 일직로 43, B동 2708호</span><span>대표번호 1800-2434</span><span>이메일 www@koreagiftcard.co.kr</span></p>
       <p class="copy">© <span data-year>2026</span> 한국상품권협회. All rights reserved.</p>
     </div>
   </div>
