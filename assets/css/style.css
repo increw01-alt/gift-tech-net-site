@@ -79,7 +79,13 @@ a { color: inherit; text-decoration: none; }
 .logo .logo-text { display: none; font-weight: 800; letter-spacing: -0.02em; font-size: 1.15rem; align-items: center; gap: 8px; }
 .logo.no-img img { display: none; }
 .logo.no-img .logo-text { display: inline-flex; }
-.logo-mark { width: 26px; height: 26px; border-radius: 7px 7px 7px 2px; background: var(--sky); display: inline-block; }
+.logo-mark { width: 26px; height: 26px; border-radius: 7px 7px 7px 2px; background: var(--sky); display: inline-block; flex: none; }
+/* 헤더 워드마크: 기존 Wix 헤더와 동일하게 파란 말풍선 + 텍스트 */
+.logo.wordmark { font-weight: 800; letter-spacing: -0.02em; font-size: 1.2rem; color: #fff; }
+.logo.wordmark .logo-mark { width: 28px; height: 28px; border-radius: 8px 8px 8px 2px; position: relative; }
+.logo.wordmark .logo-mark::after { content: ""; position: absolute; left: 7px; top: 11px; width: 14px; height: 3px; border-radius: 2px; background: rgba(255,255,255,0.9); box-shadow: 0 5px 0 rgba(255,255,255,0.9); }
+/* 푸터: 한국상품권협회 원본 로고 (크기만 조절) */
+.footer-logo img { height: 56px; width: auto; }
 
 .nav-desktop { display: none; align-items: center; gap: 4px; }
 .nav-desktop a { padding: 10px 14px; border-radius: 8px; font-weight: 500; font-size: 0.95rem; color: rgba(255,255,255,0.86); }
@@ -276,9 +282,10 @@ a { color: inherit; text-decoration: none; }
 @media (min-width: 1024px) { .brands { grid-template-columns: repeat(4, 1fr); } }
 .brand { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-m); padding: 22px; display: flex; flex-direction: column; gap: 14px; transition: border-color .15s ease, box-shadow .15s ease; }
 .brand:hover { border-color: #c7d3e0; box-shadow: var(--shadow-card); }
-.brand .mark { width: 64px; height: 64px; border-radius: 18px; overflow: hidden; background: var(--paper); display: grid; place-items: center; }
-.brand .mark img { width: 100%; height: 100%; object-fit: cover; }
-.brand .mark .fb { display: none; font-weight: 900; font-size: 1.3rem; color: var(--sky-ink); letter-spacing: -0.04em; }
+/* 브랜드 로고 원본은 흰색 워드마크(690×690, 가운데 가로 띠)라 어두운 가로 타일 위에 cover 로 배치 — 크기·위치만 조절 */
+.brand .mark { position: relative; width: 100%; aspect-ratio: 3 / 1; border-radius: 14px; overflow: hidden; background: var(--ink-2); display: grid; place-items: center; }
+.brand .mark img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.brand .mark .fb { display: none; font-weight: 900; font-size: 1.4rem; color: var(--sky); letter-spacing: -0.04em; }
 .brand .mark.no-img img { display: none; }
 .brand .mark.no-img .fb { display: block; }
 .brand .en { font-size: 0.8rem; font-weight: 700; color: var(--muted); letter-spacing: 0.02em; }
@@ -290,9 +297,9 @@ a { color: inherit; text-decoration: none; }
 .brand .tag.cert { background: #eef1f5; color: #3f4a58; }
 .brand .btn { margin-top: auto; }
 .brand.featured { grid-column: 1 / -1; background: var(--ink); color: #fff; border-color: transparent; }
-@media (min-width: 1024px) { .brand.featured { display: grid; grid-template-columns: 64px 1fr auto; align-items: center; gap: 24px; } .brand.featured .btn { margin-top: 0; } }
+@media (min-width: 1024px) { .brand.featured { display: grid; grid-template-columns: 200px 1fr auto; align-items: center; gap: 28px; } .brand.featured .btn { margin-top: 0; } }
 .brand.featured .en, .brand.featured ul { color: var(--muted-on-dark); }
-.brand.featured .mark { background: var(--ink-2); }
+.brand.featured .mark { background: var(--ink-3); max-width: 200px; }
 .brand.featured .tag { background: rgba(68,180,255,0.16); color: var(--sky); }
 .brand.featured ul li svg { color: var(--sky); }
 
@@ -327,17 +334,18 @@ a { color: inherit; text-decoration: none; }
 @media (min-width: 1024px) { .cta-visual { display: block; width: 220px; } .cta-visual img { width: 100%; height: auto; } .cta-visual.no-img { display: none; } }
 
 /* ---------- footer ---------- */
-.site-footer { background: #0f1012; color: #c3c9d2; font-size: 0.92rem; }
-.site-footer .top { display: grid; gap: 32px; padding: 56px 0 40px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+/* 푸터는 밝은 배경 — 한국상품권협회 원본 로고(진청·빨강)가 그대로 보이도록 */
+.site-footer { background: var(--paper); color: #3f4a58; font-size: 0.92rem; border-top: 1px solid var(--line); }
+.site-footer .top { display: grid; gap: 32px; padding: 56px 0 40px; border-bottom: 1px solid var(--line); }
 @media (min-width: 900px) { .site-footer .top { grid-template-columns: 1.2fr 1fr 1fr; } }
-.site-footer h4 { color: #fff; font-weight: 700; font-size: 0.95rem; margin-bottom: 14px; }
+.site-footer h4 { color: var(--text); font-weight: 700; font-size: 0.95rem; margin-bottom: 14px; }
 .site-footer ul { display: grid; gap: 8px; }
-.site-footer a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
-.site-footer .biz { padding: 24px 0 32px; display: grid; gap: 8px; font-size: 0.84rem; color: #8c95a1; }
-.site-footer .biz span + span::before { content: "|"; margin: 0 10px; color: #3a3f47; }
+.site-footer a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+.site-footer .biz { padding: 24px 0 32px; display: grid; gap: 8px; font-size: 0.84rem; color: #6b7482; }
+.site-footer .biz span + span::before { content: "|"; margin: 0 10px; color: #c9d1db; }
 .site-footer .biz p { line-height: 1.9; }
-.site-footer .copy { font-size: 0.8rem; color: #6f7883; }
-.site-footer .logo { color: #fff; }
+.site-footer .copy { font-size: 0.8rem; color: #8c95a1; }
+.site-footer .logo { color: var(--text); }
 
 /* ---------- floating consult button (mobile) ---------- */
 .float-cta { position: fixed; right: 16px; bottom: 16px; z-index: 40; display: inline-flex; align-items: center; gap: 8px; background: var(--sky); color: #0a1a28; font-weight: 800; border-radius: 999px; padding: 14px 20px; box-shadow: 0 16px 40px -12px rgba(30,143,224,0.7); }
