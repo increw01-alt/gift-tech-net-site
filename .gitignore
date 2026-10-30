@@ -1,0 +1,21 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# env / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# node (혹시 로컬 도구를 쓸 경우)
+node_modules/
+
+# 작업용 임시 파일
+_보관/
+_중복파일/
+*.log
+*.tmp

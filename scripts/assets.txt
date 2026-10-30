@@ -1,0 +1,20 @@
+# gift-tech.net 이미지 자산 목록 — 저장 파일명<TAB>Wix CDN 원본 URL
+# fetch-assets.sh / fetch-assets.ps1 이 이 파일을 읽어 assets/images/ 에 저장합니다.
+# (Wix 사이트가 종료되면 CDN 파일도 사라질 수 있으니 이전 전에 한 번 실행해 두세요.)
+logo.png	https://static.wixstatic.com/media/c48507_8e260440fc9f44c8867d916e78e32675~mv2.png
+favicon.png	https://static.wixstatic.com/media/c48507_9f9cbd1f1b874b258320e10d186ab363~mv2.png
+og-image.png	https://static.wixstatic.com/media/c48507_9820569244154a18922992914899d3e3~mv2.png
+icon-chat-bubble.png	https://static.wixstatic.com/media/c48507_271107de96334c9ca0d873967b68eb7c~mv2.png/v1/crop/x_487,y_197,w_1092,h_1185/fill/w_166,h_180,al_c,q_90/icon-chat-bubble.png
+channeltalk-consult.png	https://static.wixstatic.com/media/c48507_8263177cfe534478913800cd2fc05ddb~mv2.png
+brand-plusu.png	https://static.wixstatic.com/media/c48507_d178b386473243be8a2d4f9b705ea318~mv2.png
+brand-moapin.png	https://static.wixstatic.com/media/c48507_69295a2daf6145a790cf5642554722a6~mv2.png
+brand-plusmoon.png	https://static.wixstatic.com/media/c48507_3e79e89323c34ca2ad95afbc7be72bd3~mv2.png
+brand-pinq.png	https://static.wixstatic.com/media/c48507_7cab176c54804f89af90f7bdaf8ee91b~mv2.png
+step-01.png	https://static.wixstatic.com/media/c48507_07a2433a0fdc45fc9b748d7511c30108~mv2.png
+step-02.png	https://static.wixstatic.com/media/c48507_0277cf90a7ae4c52a99d3b5ce4a15da0~mv2.png
+step-03.png	https://static.wixstatic.com/media/c48507_9549d4e0b397419c94d64ed87e352052~mv2.png
+step-04.png	https://static.wixstatic.com/media/c48507_45a6ab006488493c95e75a8f5da02dfa~mv2.png
+step-05.png	https://static.wixstatic.com/media/c48507_77d3464a2d424c7b8a8af3f1f4eb0c50~mv2.png
+step-06.png	https://static.wixstatic.com/media/c48507_8891f8f31d7340e4965a1bd11816638e~mv2.png
+step-07.png	https://static.wixstatic.com/media/c48507_a652b211e7f6489684fc9941e5cfbc0d~mv2.png
+step-chat.png	https://static.wixstatic.com/media/c48507_96020674e363440fa393f39cdae86377~mv2.png
