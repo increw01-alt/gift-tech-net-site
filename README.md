@@ -110,7 +110,7 @@ Cloudflare 대시보드 → **Workers & Pages → Create → Pages → Connect t
 
 | 위치 | 내용 |
 |---|---|
-| 모든 페이지 `<head>` 주석 | GTM 컨테이너 ID `GTM-XXXXXXX` — 준비되면 주석 해제 |
+| `assets/js/ga4.js` | gift-tech.net 전용 GA4 측정 ID. 직접 태그를 사용하는 동안 GTM 예시 주석은 유지 |
 | 푸터 사업자 정보 | 대표자명, 사업자등록번호, 통신판매업 신고번호 (대괄호 자리) |
 | `assets/images/og-image.png` | Wix 원본을 그대로 사용 중 — 새로 만들면 2500×1330 또는 1200×630 |
 | 블로그 | 열려면 `blog.html` 을 만들고 `_redirects` 의 `/blog` 줄 삭제, 메뉴에 다시 추가 |
@@ -119,4 +119,5 @@ Cloudflare 대시보드 → **Workers & Pages → Create → Pages → Connect t
 
 - 공통 헤더·푸터·상담 배너는 각 HTML 에 동일하게 들어 있습니다. 문구를 바꿀 때는 6개 파일을 함께 바꿔 주세요(VS Code 전체 바꾸기 권장).
 - 색상·간격은 `assets/css/style.css` 상단 `:root` 토큰에서 한 번에 바꿉니다. 브랜드 포인트 색 `#44b4ff` 는 기존 Wix 사이트 색을 유지했습니다.
-- 상담 클릭은 `dataLayer` 에 `consult_click` 이벤트로 올라갑니다. GTM 연결 후 GA4·Google Ads 전환 트리거로 바로 쓸 수 있습니다.
+- GA4는 `gift-tech.net` 및 `www.gift-tech.net`의 HTTPS 페이지에서 실행합니다. 검수할 때 주소에 `site_desk_test=1`을 붙이면 해당 페이지의 GA4 전송을 건너뜁니다.
+- 상담 클릭은 `dataLayer` 에 `consult_click` 이벤트로 올라갑니다. 이 이벤트를 GA4에 보내려면 별도로 전환 연결을 설정하세요.
